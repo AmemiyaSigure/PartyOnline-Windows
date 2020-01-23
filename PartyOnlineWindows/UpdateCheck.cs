@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PartyOnlineWindows
 {
-    public partial class Form1 : Form
+    public partial class UpdateCheck : Form
     {
-        public Form1()
+        public UpdateCheck()
         {
             InitializeComponent();
         }
