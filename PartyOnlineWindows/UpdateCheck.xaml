@@ -5,6 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PartyOnlineWindows"
         mc:Ignorable="d"
-        Title="{DynamicResource Title.UpdateCheck}" Height="100" Width="483">
-    
+        Title="{DynamicResource Title.UpdateCheck}" Height="117.001" Width="483" Icon="Infinity_rain.ico">
+    <Canvas HorizontalAlignment="Left" Width="473">
+        <ProgressBar x:Name="ProcessCheck" Height="25" Width="453" Canvas.Left="10" Canvas.Top="10"/>
+        <Button x:Name="ButtonCancel" Content="{DynamicResource Button.Cancel}" Width="75" Canvas.Left="388" Canvas.Top="40" Height="30" Click="ButtonCancel_Click"/>
+        <Label x:Name="LabelStatus" Content="Status" Canvas.Left="10" Canvas.Top="43" Width="373"/>
+
+    </Canvas>
 </Window>

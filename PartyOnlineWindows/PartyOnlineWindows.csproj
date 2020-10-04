@@ -58,6 +58,7 @@
     <Compile Include="UpdateCheck.xaml.cs">
       <DependentUpon>UpdateCheck.xaml</DependentUpon>
     </Compile>
+    <Resource Include="Infinity_rain.ico" />
     <Content Include="Languages\en_US.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

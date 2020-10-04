@@ -19,9 +19,22 @@ namespace PartyOnlineWindows
     /// </summary>
     public partial class UpdateCheck : Window
     {
+        private string Status = "Status";
+
         public UpdateCheck()
         {
+            WindowStartupLocation = WindowStartupLocation.CenterScreen;
             InitializeComponent();
+
+            var statusBanding = new Binding();
+            statusBanding.Source = Status;
+            statusBanding.Path = new PropertyPath(".");
+            LabelStatus.SetBinding(Label.ContentProperty, statusBanding);
+        }
+
+        private void ButtonCancel_Click(object sender, RoutedEventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }
